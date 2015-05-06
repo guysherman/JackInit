@@ -11,3 +11,5 @@ I have aspirations to build a system which can save and restore complete Jack gr
 ## License
 
 All the contents of this repository are released under a Creative Commons Attribution 4.0 International license. See http://creativecommons.org/licenses/by/4.0/ for details.
+
+The full contents of the license are also contained in the file LICENSE.md

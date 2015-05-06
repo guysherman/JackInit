@@ -1,4 +1,4 @@
-#! /usr/bin/sh
+#! /bin/bash
 # Copyright (c) Guy Sherman 2015
 # This file is released under a Creative Commons Attribution 4.0 International License
 # see LICENSE.md for more info
@@ -11,11 +11,14 @@
 # file exists!
 
 # Start Jack with our handy script that wrangles Pulse Audio.
-source ~/Code/JackInit/setup_jack.sh
+source /home/guy/Code/JackInit/setup_jack.sh
+
+# wait for it
+sleep 5
 
 # Fire up JackRack. I put an & on it so that your terminal session doesn't
 # get blocked if you're running it manually
-jack-rack ~/Code/JackInit/headphone_eq.xml &
+jack-rack /home/guy/Code/JackInit/headphone_eq.xml &
 
 # We have to sleep for a bit, because jack-rack needs a little time
 # to add its inputs and outputs to jack. 5 seconds is excessive, but

@@ -13,3 +13,7 @@ sleep 5
 
 pacmd set-default-sink "jack_out"
 pacmd set-default-source "jack_in"
+
+# I was getting weird volumes set on this output, you may need to do something
+# similar but with a different sink. See "man pulse-cli-syntax"
+pactl set-sink-volume alsa_output.pci-0000_00_1b.0.analog-stereo 100%
